@@ -1,0 +1,22 @@
+.footer-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*flex-margin-inline: Use on footer custom*/
+.fmi { 
+    margin-inline: 1em;
+}
+.fmi-ico {
+    margin-inline: 4px;
+    margin-top: 4px;
+}
+.footer-custom a {
+    margin: 4px;
+}
+.icon-32 {
+    height: 32px;
+}
+.icon-64 {
+    height: 64px;
+}
