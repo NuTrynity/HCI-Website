@@ -291,18 +291,16 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
         <script>
         window.addEventListener('load', function() {
         const root = document.querySelector(':root');
-        const rootStyles = getComputedStyle(root);
-        let bg = rootStyles.getPropertyValue('--bg-image'); 
 
-
+        //Please put all pictures that can be good on the hero section here
         const images = [
             "assets/img/bg-masthead.jpg",
-            "assets/img/simulator.jpg",
-            "assets/img/RPG.jpg",
-            "assets/img/TPS.jpg"
+            "assets/img/kinitopet.jpg",
+            "assets/img/buckshot-roulette.jpg",
         ];
 
         // Choose a random image from the array
@@ -311,9 +309,6 @@
 
         // Replace the URL in the CSS variable
         root.style.setProperty('--bg-image', `url('${newImageUrl}')`); 
-
-        // Optional: Log the initial and new URLs to the console
-        console.log("New Image URL:", newImageUrl);
         });
         </script>
     </body>
