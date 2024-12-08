@@ -18,6 +18,22 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/custom.css" rel="stylesheet" />
+
+        <style>
+            :root {
+                --bg-image: url("");
+            }
+
+            header.masthead {
+                padding-top: 10rem;
+                padding-bottom: calc(10rem - 4.5rem);
+                background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), var(--bg-image);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-size: cover;
+            }
+        </style>
     </head>
     
     <body id="page-top">
@@ -275,5 +291,30 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+        window.addEventListener('load', function() {
+        const root = document.querySelector(':root');
+        const rootStyles = getComputedStyle(root);
+        let bg = rootStyles.getPropertyValue('--bg-image'); 
+
+
+        const images = [
+            "assets/img/bg-masthead.jpg",
+            "assets/img/simulator.jpg",
+            "assets/img/RPG.jpg",
+            "assets/img/TPS.jpg"
+        ];
+
+        // Choose a random image from the array
+        const rand_index = Math.floor(Math.random() * images.length);
+        const newImageUrl = images[rand_index];
+
+        // Replace the URL in the CSS variable
+        root.style.setProperty('--bg-image', `url('${newImageUrl}')`); 
+
+        // Optional: Log the initial and new URLs to the console
+        console.log("New Image URL:", newImageUrl);
+        });
+        </script>
     </body>
 </html>
