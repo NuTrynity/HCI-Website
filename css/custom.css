@@ -1,3 +1,5 @@
+/* Custom CSS file for Vargas' specific needs that arent in style.css */
+
 .footer-custom {
     display: flex;
     justify-content: center;
@@ -19,4 +21,21 @@
 }
 .icon-64 {
     height: 64px;
+}
+.c-container {
+    display: flex;
+}
+.c-col {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+    margin-inline: 1em;
+    border-radius: 1em;
+    padding: 1em;
+}
+hr.s-white-space {
+    opacity: 0;
+}
+hr.m-white-space {
+    padding: 1em;
+    opacity: 0;
 }
