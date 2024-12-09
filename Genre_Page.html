@@ -60,6 +60,47 @@
         background-color: #555;
     }
 
+    /* Hero section styles with background image */
+    .hero {
+        text-align: center;
+        background: url('../HCI-Website/assets/img/') no-repeat center center/cover;
+        padding: 5rem 2rem;
+        color: white;
+        position: relative;
+    }
+
+    /* Adjust header logo styles */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo img {
+        width: 40px; /* Adjust size as needed */
+        height: 40px;
+        border-radius: 50%; /* Optional: make it circular */
+    }
+
+    /* Overlay to darken background (optional) */
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Darken background */
+        z-index: 1;
+    }
+
+    .hero h1,
+    .hero p {
+        position: relative;
+        z-index: 2;
+    }
+
+
     /* Hero section styles */
     .hero {
         text-align: center;
@@ -209,18 +250,22 @@
 </style>
 <body>
     <header>
-        <nav>
-            <div class="logo">Whydot</div>
-            <ul class="nav-links">
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <a href="#" class="download-btn">Download</a>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">
+            <img src="../HCI-Website/assets/img/icons/Whydot.png" alt="Whydot Logo">
+            Whydot
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="download-btn">Download</a>
+    </nav>
+</header>
+
     <main>
         <section class="hero">
             <h1>Game Genres and <br> Example Games</h1>
