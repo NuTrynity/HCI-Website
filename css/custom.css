@@ -1,20 +1,6 @@
 /* Custom CSS file for Vargas' specific needs that arent in style.css */
-
-.footer-custom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*flex-margin-inline: Use on footer custom*/
-.fmi { 
-    margin-inline: 1em;
-}
-.fmi-ico {
-    margin-inline: 4px;
-    margin-top: 4px;
-}
-.footer-custom a {
-    margin: 4px;
+.fmi-1 {
+    margin-inline: 0.5rem;
 }
 .icon-32 {
     height: 32px;
@@ -22,20 +8,19 @@
 .icon-64 {
     height: 64px;
 }
-.c-container {
-    display: flex;
-}
-.c-col {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.33);
-    margin-inline: 1em;
-    border-radius: 1em;
-    padding: 1em;
-}
 hr.s-white-space {
     opacity: 0;
 }
 hr.m-white-space {
     padding: 1em;
     opacity: 0;
+}
+.btn-hoverable {
+    transition: 0.4s;
+}
+.btn-hoverable:hover {
+    transform: scale(1.05);
+}
+.b-radius-1 {
+    border-radius: 1em;
 }
