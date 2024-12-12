@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy JS Test</title>
+    <style>
+        .game-cards {
+            display: flex;
+        }
+        .game-card {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            border-radius: 1em;
+            margin-inline: 1em;
+        }
+        .image {
+            width: 240px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Games</h1>
+    <div class="game-cards">
+        <div class="game-card">
+            <img class="image" src="assets/img/action.jpg" alt="Action">
+            <h1 class="name">Name</h1>
+            <p class="desc">Free</p>
+            <small class="category">Action</small>
+        </div>
+    </div>
+    <script>
+        // For Genre Page Only
+        const container = document.querySelector(".game-cards");
+
+        fetch("sample_data.json")
+        .then((Response) => Response.json())
+        .then(data => {
+            
+            let content = data.map(function(item) {
+                return `        <div class="game-card">
+                                    <img class="image" src="${item.img}" alt="Action">
+                                    <h1 class="name">${item.name}</h1>
+                                    <p class="desc">${item.desc}</p>
+                                    <small class="category">${item.category}</small>
+                                </div>`;
+            })
+
+            content = content.join("");
+            container.innerHTML = content
+        });
+    </script>
+</body>
+</html>
