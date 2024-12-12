@@ -10,5 +10,11 @@
         "desc" : "An Action Game",
         "category" : "Action",
         "img" : "assets/img/action.jpg"
+    },
+    {
+        "name" : "Game 3",
+        "desc" : "FPG Game",
+        "category" : "FPG",
+        "img" : "assets/img/FPS.jpg"
     }
 ]
