@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "Game 1",
+        "desc" : "Pixel Action Game",
+        "category" : ["Action", "Adventure"],
+        "img" : "assets/img/PIXEL BG.jpg"
+    },
+    {
+        "name" : "Game 2",
+        "desc" : "An Action Game",
+        "category" : ["Action"],
+        "img" : "assets/img/action.jpg"
+    },
+    {
+        "name" : "Game 3",
+        "desc" : "First-Person Shooter Game",
+        "category" : ["Action", "First-Person Shooter"],
+        "img" : "assets/img/FPS.jpg"
+    }
+]
