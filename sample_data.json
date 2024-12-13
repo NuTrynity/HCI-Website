@@ -2,19 +2,19 @@
     {
         "name" : "Game 1",
         "desc" : "Pixel Action Game",
-        "category" : ["Action", "Adventure"],
+        "category" : "Action",
         "img" : "assets/img/PIXEL BG.jpg"
     },
     {
         "name" : "Game 2",
         "desc" : "An Action Game",
-        "category" : ["Action"],
+        "category" : "Action",
         "img" : "assets/img/action.jpg"
     },
     {
         "name" : "Game 3",
-        "desc" : "First-Person Shooter Game",
-        "category" : ["Action", "First-Person Shooter"],
+        "desc" : "FPG Game",
+        "category" : "FPG",
         "img" : "assets/img/FPS.jpg"
     }
 ]

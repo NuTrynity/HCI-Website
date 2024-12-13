@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Templates</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="../HCI-Website/css/styles.css">
+    <link rel="stylesheet" href="../HCI-Website/css/custom.css">
     <link rel="icon" type="image/x-icon" href="assets/img/icons/Whydot.png" />
 </head>
 <style>
@@ -57,6 +57,47 @@
     .download-btn:hover {
         background-color: #555;
     }
+
+    /* Hero section styles with background image */
+    .hero {
+        text-align: center;
+        background: url('../HCI-Website/assets/img/') no-repeat center center/cover;
+        padding: 5rem 2rem;
+        color: white;
+        position: relative;
+    }
+
+    /* Adjust header logo styles */
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo img {
+        width: 40px; /* Adjust size as needed */
+        height: 40px;
+        border-radius: 50%; /* Optional: make it circular */
+    }
+
+    /* Overlay to darken background (optional) */
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Darken background */
+        z-index: 1;
+    }
+
+    .hero h1,
+    .hero p {
+        position: relative;
+        z-index: 2;
+    }
+
 
     /* Hero section styles */
     .hero {
@@ -112,28 +153,6 @@
 
     .asset-btn:hover, .template-btn:hover {
         opacity: 0.9;
-    }
-
-    /* Hero section styles with background image */
-    .hero {
-        text-align: center;
-        background: url('assets/img/Action-Adventure.jpg') no-repeat center center/cover;
-        padding: 5rem 2rem;
-        color: white;
-        position: relative;
-    }
-
-    /* Adjust header logo styles */
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .logo img {
-        width: 40px; /* Adjust size as needed */
-        height: 40px;
-        border-radius: 50%; /* Optional: make it circular */
     }
 
     /* Game section styles */
@@ -232,23 +251,17 @@
         <nav class="navbar py-3">
             <div class="container">
                 <div class="logo">
-                    <a href="" class="navbar-brand">
-                        <img class="icon-64 b-radius-1" src="assets/img/icons/Whydot.png" alt="Whydot Logo">
-                        Whydot
-                    </a>
+                    <img src="../HCI-Website/assets/img/icons/Whydot.png" alt="Whydot Logo">
+                    Whydot
                 </div>
 
-                <div class="row align-items-center">
-                    <div class="col-auto align-items-center">
-                        <ul class="hstack list-unstyled align-items-center  ">
-                            <li class="nav-item fmi-1"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item fmi-1"><a class="nav-link" href="resources.html">Resources</a></li>
-                            <li class="nav-item fmi-1"><a class="nav-link" href="#page-top">Games</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-auto">
-                        <a href="#" class="download-btn">Download</a>
-                    </div>
+                <div style="display: flex;">
+                    <ul class="nav-links align-items-center fmi-1">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="#page-top">Games</a></li>
+                    </ul>
+                    <a href="#" class="download-btn fmi-1">Download</a>
                 </div>
             </div>
         </nav>
@@ -268,7 +281,76 @@
     <div class="game-section">
         
         <div class="game-cards">
-            <!-- Place content on sample_data.json-->
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/action.jpg" alt="Action">
+                <h3>Action Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/shooter.jpg" alt="Shooter">
+                <h3>Shooter Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/fighting.jpg" alt="Fighting">
+                <h3>Fighting Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/beat em up.jpg" alt="Beat 'Em Up">
+                <h3>Beat 'Em Up Game</h3>
+                <p>Free </p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/platform.jpg" alt="Platform">
+                <h3>Platform Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/stealth.jpg" alt="Stealth">
+                <h3>Stealth Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/FPS.jpg" alt="FPS">
+                <h3>First Person Shooter Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/TPS.jpg" alt="TPS">
+                <h3>Third Person Shooter Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/Survival.jpg" alt="Survival">
+                <h3>Survival Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/Rhythm.jpg" alt="Rhythm">
+                <h3>Rhythm Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/Action-Adventure.jpg" alt="Act-Ad">
+                <h3>Action-Adventure Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/Survival-Horror.jpg" alt="Sur-Hor">
+                <h3>Survival-Horror Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/RPG.jpg" alt="Sur-Hor">
+                <h3>Role Playing Game</h3>
+                <p>Free</p>
+            </div>
+            <div class="game-card">
+                <img src="../HCI-Website/assets/img/simulator.jpg" alt="Sur-Hor">
+                <h3>Simulator Game</h3>
+                <p>Free</p>
+            </div>
         </div>
     </div>
     <!-- Footer-->
@@ -281,26 +363,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js">
-    </script>
-    <script>
-        const container = document.querySelector(".game-cards");
-
-        fetch("sample_data.json")
-        .then((Response) => Response.json())
-        .then(data => {
-            
-            let content = data.map(function(item) {
-                return `        <div class="game-card">
-                                    <img class="image" src="${item.img}" alt="Action">
-                                    <h1 class="name">${item.name}</h1>
-                                    <p class="desc">${item.desc}</p>
-                                    <small class="category">${item.category}</small>
-                                </div>`;
-            })
-
-            content = content.join("");
-            container.innerHTML = content
-            });
     </script>
 </body>
 </html>
