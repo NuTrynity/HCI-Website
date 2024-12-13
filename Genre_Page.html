@@ -278,8 +278,8 @@
             </div>
         </section>
     </main>
-    <div class="game-section">
-        
+
+    <div class="game-section" id="page-top">
         <div class="game-cards">
             <div class="game-card">
                 <img src="../HCI-Website/assets/img/action.jpg" alt="Action">
@@ -353,6 +353,7 @@
             </div>
         </div>
     </div>
+
     <!-- Footer-->
     <footer class="bg-light py-5">
         <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div></div>
@@ -363,6 +364,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js">
+    </script>
+
+    <script>
+        const container = document.querySelector(".game-cards");
+
+        fetch("sample_data.json")
+        .then((Response) => Response.json())
+        .then(data => {
+            
+            let content = data.map(function(item) {
+                return `        <div class="game-card">
+                                    <img class="image" src="${item.img}" alt="Action">
+                                    <h1 class="name">${item.name}</h1>
+                                    <p class="desc">${item.desc}</p>
+                                    <small class="category">${item.category}</small>
+                                </div>`;
+            })
+
+            content = content.join("");
+            container.innerHTML = content
+            });
     </script>
 </body>
 </html>
