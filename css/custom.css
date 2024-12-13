@@ -24,3 +24,200 @@ hr.m-white-space {
 .b-radius-1 {
     border-radius: 1em;
 }
+/* style_reset.css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+@font-face {
+    font-family: 'Sonorous';
+    src: url(../fonts/Sonorous/Sonorous.otf);
+}
+
+body {
+    color: #f6e7d8;
+    background-color: #1c191a;
+
+    font-family: 'Sonorous', sans-serif;
+    line-height: 1.5;
+}
+
+a:link {
+    color: #f6e7d8;
+    text-decoration: none;
+
+    transition: 0.5s ease;
+}
+
+a:link:hover {
+    color: #3584e4;
+}
+
+button {
+    padding: 1em;
+    font-family: 'Sonorous', sans-serif;
+    font-size: larger;
+
+    background-color: rgba(0, 0, 0, 33%);
+    border-radius: 1em;
+    color: #f6e7d8;
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 75%);
+    transform: scale(1.1);
+}
+
+hr {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+/* Background Image Template */
+.background_images {
+    position: relative;
+}
+
+.background_images::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right top, #437af246, #34313146);
+
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.background_images img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    
+    object-fit: cover;
+
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+/* Background Image Template */
+
+/* Columns */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.column {
+    width: 100%;
+    margin-inline: 1em;
+    border-radius: 1em;
+}
+
+.column_container {
+    margin: 1em;
+    padding: 1em;
+}
+
+.column .feature_link {
+    color: #f6e7d8;
+    text-decoration: none;
+
+    transition: 0.5s ease;
+}
+
+.column .feature_link:hover {
+    color: #3584e4;
+}
+/* Columns */
+
+/* Nav Bar */
+.nav_bar {
+    display: flex;
+    align-items: center;
+    
+    background-color: #343131;
+    padding-left: 3em;
+
+    font-size: larger;
+}
+
+.nav_bar ul {
+    display: flex;
+
+    align-items: center;
+    margin-inline: 1em;
+    list-style: none;
+
+    overflow: hidden;
+}
+
+.nav_bar a {
+    color: #f6e7d8;
+
+    text-align: center;
+    text-decoration: none;
+    margin: 4px;
+    height: 100%;
+}
+
+.nav_bar li, img {
+    padding: 1em;
+    border-radius: 8px;
+
+    transition: 0.2s ease;
+}
+
+.nav_bar li:hover, .nav_bar img:hover {
+    background-color: hsla(0, 0%, 100%, 0.33);
+}
+
+.nav_bar img:hover {
+    transform: scale(1.1);
+}
+/* Nav Bar */
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: small;
+}
+
+.footer a {
+    margin: 8px;
+
+}
+
+.footer div {
+    margin-inline: 1em;
+}
+
+.footer img {
+    transition: 0.2s ease;
+}
+
+.footer img:hover {
+    transform: scale(1.33);
+}
