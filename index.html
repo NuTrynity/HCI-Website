@@ -284,6 +284,7 @@
                 </div>
             </div>
         </footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- SimpleLightbox plugin JS-->
@@ -297,23 +298,23 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
         <script>
-        window.addEventListener('load', function() {
-        const root = document.querySelector(':root');
+            window.addEventListener('load', function() {
+            const root = document.querySelector(':root');
 
-        //Please put all pictures that can be good on the hero section here
-        const images = [
-            "assets/img/bg-masthead.jpg",
-            "assets/img/kinitopet.jpg",
-            "assets/img/buckshot-roulette.jpg",
-        ];
+            //Please put all pictures that can be good on the hero section here
+            const images = [
+                "assets/img/bg-masthead.jpg",
+                "assets/img/kinitopet.jpg",
+                "assets/img/buckshot-roulette.jpg",
+            ];
 
-        // Choose a random image from the array
-        const rand_index = Math.floor(Math.random() * images.length);
-        const newImageUrl = images[rand_index];
+            // Choose a random image from the array
+            const rand_index = Math.floor(Math.random() * images.length);
+            const newImageUrl = images[rand_index];
 
-        // Replace the URL in the CSS variable
-        root.style.setProperty('--bg-image', `url('${newImageUrl}')`); 
-        });
+            // Replace the URL in the CSS variable
+            root.style.setProperty('--bg-image', `url('${newImageUrl}')`); 
+            });
         </script>
     </body>
 </html>
