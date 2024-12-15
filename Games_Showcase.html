@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whydot</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    /* General Body and Reset */
+    body, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Header Section */
+    header .logo {
+        font-size: 1.8rem;
+        color: #000;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        background: linear-gradient(135deg, #2c2cfa, #5b5bfd);
+        height: 60vh;
+        padding: 0 10px;
+    }
+
+    .hero-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    /* Games Showcase */
+    .games-showcase img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .games-showcase img:hover {
+        transform: scale(1.05);
+    }
+
+    .badge {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer p {
+        font-size: 0.9rem;
+    }
+
+</style>
+<body>
+    <!-- Header Section -->
+    <header class="bg-light py-2 shadow-sm">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo fw-bold">Whydot</h1>
+            <div>
+                <a href="#" class="mx-2 text-decoration-none">Games</a>
+                <a href="#" class="mx-2 text-decoration-none">Pricing</a>
+                <a href="#" class="mx-2 text-decoration-none">Resources</a>
+                <a href="#" class="mx-2 text-decoration-none">Community</a>
+                <a href="#" class="mx-2 text-decoration-none">Blog</a>
+            </div>
+            <button class="btn btn-dark">Download</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h2 class="fw-bold">Play games on <span class="text-white">gd.games</span></h2>
+            <p>Discover and play the best games made with GDevelop.</p>
+            <a href="#" class="btn btn-outline-light mt-3">Play games on gd.games</a>
+        </div>
+    </section>
+
+    <!-- Games Showcase -->
+    <section class="games-showcase py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h3 class="text-primary fw-bold">MUST-PLAY GAMES</h3>
+            </div>
+            <div class="row align-items-center">
+                <!-- Game Image -->
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow" alt="Katuba Game">
+                </div>
+                <!-- Game Description -->
+                <div class="col-md-6">
+                    <h4 class="fw-bold text-dark">In Katuba by <span class="text-info">Joe Yu</span></h4>
+                    <p class="badge bg-dark text-light">Took part in the Korean indie game festival Burning Beaver 2022</p>
+                    <p class="mt-3">
+                        A side-scrolling, action-packed game with a focus on boss battles and spectacle.
+                    </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+                <!-- Vai Juliette Showcase -->
+    <section class="games-showcase py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Game Description -->
+                <div class="col-md-6 order-md-1 order-2">
+                    <h4 class="fw-bold text-dark">Vai Juliette! by <span class="text-info">Ornilo Games</span></h4>
+                    <div class="mt-2 mb-3">
+                        <span class="badge bg-dark text-light px-3 py-2">
+                            Downloaded over 1 million times across Google Play and the Apple App Store.
+                        </span>
+                    </div>
+                    <p class="mt-3">
+                        Venture into this hypercasual game alongside the Brazilian superstar Juliette Freire!
+                    </p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+                <!-- Game Image -->
+                <div class="col-md-6 order-md-2 order-1">
+                    <img src="image.png" class="img-fluid rounded shadow" alt="Vai Juliette Game">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p class="m-0">&copy; 2024 Whydot Showcase | All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
