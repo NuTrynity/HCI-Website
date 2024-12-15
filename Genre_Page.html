@@ -276,152 +276,27 @@
     </main>
     <div class="game-section" id="page-top">
         <div class="game-section">
-            
             <div class="game-cards">
                 <!-- Put Contents on Sample_Data.json to add a game-card-->
-                <main>
-                    <div class="game-section" id="page-top">
-                        <div class="game-section">
-                            <div class="game-cards">
-                                <!-- Game Card 1 -->
-                                <a href="brotato.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/action.jpg" alt="Action">
-                                    <h3>Action Game</h3>
-                                    <p>Free</p>
-                                </a>
-                                
-                                <!-- Game Card 2 -->
-                                <a href="shooter_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/shooter.jpg" alt="Shooter">
-                                    <h3>Shooter Game</h3>
-                                    <p>Free</p>
-                                </a>
-                
-                                <!-- Game Card 3 -->
-                                <a href="fighting_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/fighting.jpg" alt="Fighting">
-                                    <h3>Fighting Game</h3>
-                                    <p>Free</p>
-                                </a>
-                
-                                <!-- Game Card 4 -->
-                                <a href="beat_em_up.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/beat em up.jpg" alt="Beat 'Em Up">
-                                    <h3>Beat 'Em Up Game</h3>
-                                    <p>Free</p>
-                                </a>
-                
-                                <!-- Game Card 5 -->
-                                <a href="platform_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/platform.jpg" alt="Platform">
-                                    <h3>Platform Game</h3>
-                                    <p>Free</p>
-                                </a>
-
-                                <!-- Game Card 6 -->
-                                <a href="platform_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/stealth.jpg" alt="Stealth">
-                                    <h3>Stealth Game</h3>
-                                    <p>Free</p>
-                                </a>
-
-                                <!-- Game Card 7 -->
-                                <a href="platform_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/FPS.jpg" alt="FPS">
-                                    <h3>First Person Shooter Game</h3>
-                                    <p>Free</p>
-                                </a>
-
-                                <!-- Game Card 8 -->
-                                <a href="platform_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/Survival.jpg" alt="Survival">
-                                    <h3>Survival Game</h3>
-                                    <p>Free</p>
-                                </a>
-
-                                <!-- Game Card 9 -->
-                                <a href="platform_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/Survival-Horror.jpg" alt="Survival-Horror">
-                                    <h3>Survival-Horror Game</h3>
-                                    <p>Free</p>
-                                </a>
-
-                                <!-- Game Card 10 -->
-                                <a href="platform_game.html" class="game-card">
-                                    <img src="../HCI-Website/assets/img/Rhythm.jpg" alt="Rhythm">
-                                    <h3>Rhythm Game</h3>
-                                    <p>Free</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            
-        <!-- Core theme JS-->
-        <script src="js/scripts.js">
-        </script>
+            </div>
+        </div>
+    </div>
     
-        <script>
-            // Select search bar and all game cards
-            const searchInput = document.querySelector('.search-bar');
-            const gameCards = document.querySelectorAll('.game-card');
-
-            // Add input event listener to the search bar
-            searchInput.addEventListener('input', () => {
-                const searchTerm = searchInput.value.toLowerCase().trim(); // Normalize input
-
-                // Loop through each card and filter based on search term
-                gameCards.forEach(card => {
-                    const cardTitle = card.querySelector('h3').textContent.toLowerCase();
-
-                    // Toggle visibility based on matching search term
-                    if (cardTitle.includes(searchTerm)) {
-                        card.style.display = ''; // Reset to default (CSS handles layout)
-                    } else {
-                        card.style.display = 'none'; // Hide non-matching cards
-                    }
-                });
-            });
-
-            const noResultsMessage = document.createElement('p');
-            noResultsMessage.textContent = 'No games found.';
-            noResultsMessage.style.display = 'none';
-            noResultsMessage.style.textAlign = 'center';
-            document.querySelector('.game-cards').parentNode.appendChild(noResultsMessage);
-
-            searchInput.addEventListener('input', () => {
-                const searchTerm = searchInput.value.toLowerCase().trim();
-                let hasResults = false;
-
-                gameCards.forEach(card => {
-                    const cardTitle = card.querySelector('h3').textContent.toLowerCase();
-                    if (cardTitle.includes(searchTerm)) {
-                        card.style.display = '';
-                        hasResults = true;
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-
-                noResultsMessage.style.display = hasResults ? 'none' : 'block';
-            });
-
-        </script>
-    
-
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <!-- Footer-->
     <footer class="py-5 text-white bg-primary">
-        <div class="container px-4 px-lg-5">
-            <div class="row align-items-center">
-                <div class="small text-center text-muted col-4">
+        <div class="container">
+            <div class="row small text-center text-muted">
+                <div class="col-4">
                     Copyright &copy; 2024 - NuTrynity Games
                 </div>
-                <div class="small text-center text-muted col-4">
-                    <a href="#page-top" class="nav-item">Home</a>
-                    <a href="resources.html" class="nav-item">Resources</a>
-                    <a href="Genre_Page.html" class="nav-item">Games</a>
+                <div class="col-4">
+                    <a href="index.html" class="nav-item fmi-1">Home</a>
+                    <a href="#page-top" class="nav-item fmi-1">Resources</a>
+                    <a href="Genre_Page.html" class="nav-item fmi-1">Games</a>
                 </div>
-                <div class="small text-center col-4">
+                <div class="col-4">
                     <a href=""><img src="assets/img/icons/socials/ko-fi-black.png" class="icon-32 fmi-1"></a>
                     <a href=""><img src="assets/img/icons/socials/twitter-black.png" class="icon-32 fmi-1"></a>
                     <a href=""><img src="assets/img/icons/socials/fb-black.png" class="icon-32 fmi-1"></a>
@@ -430,6 +305,37 @@
             </div>
         </div>
     </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
+        <script>
+            // For Genre Page Only
+            const container = document.querySelector(".game-cards");
+            fetch("sample_data.json")
+            .then((Response) => Response.json())
+            .then(data => {
+                
+                let content = data.map(function(item) {
+                    return `        <div class="game-card">
+                                        <img class="image" src="${item.img}" alt="Action">
+                                        <h1 class="name">${item.name}</h1>
+                                        <p class="desc">${item.desc}</p>
+                                        <small class="category">${item.category}</small>
+                                    </div>`;
+                })
+
+                content = content.join("");
+                container.innerHTML = content
+            });
+        </script>
     </body>
     </html>
