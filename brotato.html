@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brotato Game Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/Whydot.png" />
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        padding: 50px;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .game-info, .game-features {
+        background-color: #333;
+        padding: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 60%; /* Adjust width as needed */
+    }
+
+    .game-trailer {
+        text-align: center;
+        width: 50%; /* Adjust width as needed */
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .game-features a.view-on-steam {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        background-color: #444;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    .image-gallery img {
+        width: 300px; /* Adjust width as needed */
+        height: auto;
+    }
+
+    footer {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html#page-top">
+                    <img src="assets/img/icons/Whydot.png" class="icon-64" style="margin-inline: 4px; border-radius: 1em;">
+                    Whydot
+                </a>
+                <!-- TODO PUT LOGO HERE -->
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Genre_Page.html">Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="game-info">
+            <h2>Brotato</h2>
+            <p>A spaceship from Potato World crashes onto an alien planet. The sole survivor: Brotato, the only potato capable of handling 6 weapons at the same time. Waiting to be rescued by his mates, Brotato must survive in this hostile environment.</p>
+        </section>
+
+        <section class="game-trailer">
+            <h2>Brotato - Early Access Trailer</h2>
+            <div class="video-container">
+                <iframe width="594" height="334" src="https://www.youtube.com/embed/bXEhKX41WRk" 
+                title="Brotato - Early Access Trailer" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            </div>
+        </section>
+
+        <section class="image-gallery">
+            <img src="../HCI-Website/assets/img/brotato_1.jpg" alt="Image 1">
+            <img src="../HCI-Website/assets/img/brotato_2.jpg" alt="Image 2">
+            <img src="../HCI-Website/assets/img/brotato_3.jpg" alt="Image 3">
+            <img src="../HCI-Website/assets/img/brotato_4.jpg" alt="Image 4">
+        </section>
+
+        <section class="game-features">
+            <h2>Features</h2>
+            <ul>
+                <li>Auto-firing weapons by default with a manual aiming option</li>
+                <li>Fast runs (under 30 minutes)</li>
+                <li>Dozens of characters available to customize your runs (one-handed, crazy, lucky, mage and many more)</li>
+                <li>Hundreds of items and weapons to choose from (flamethrowers, SMGs, rocket launchers or sticks and stones)</li>
+                <li>Survive waves lasting 20 to 90 seconds each and kill off as many aliens as you can during that time</li>
+                <li>Collect materials to gain experience and get items from the shop between waves of enemies</li>
+                <li>Accessibility options: tweak the health, damage and speed of enemies so the difficulty is right for you</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer-->
+    <footer class="py-5 text-white bg-primary">
+        <div class="container px-4 px-lg-5">
+            <div class="row align-items-center">
+                <div class="small text-center text-muted col-4">
+                    Copyright &copy; 2024 - NuTrynity Games
+                </div>
+                <div class="small text-center text-muted col-4">
+                    <a href="#page-top" class="nav-item">Home</a>
+                    <a href="resources.html" class="nav-item">Resources</a>
+                    <a href="Genre_Page.html" class="nav-item">Games</a>
+                </div>
+                <div class="small text-center col-4">
+                    <a href=""><img src="assets/img/icons/socials/ko-fi-black.png" class="icon-32 fmi-1"></a>
+                    <a href=""><img src="assets/img/icons/socials/twitter-black.png" class="icon-32 fmi-1"></a>
+                    <a href=""><img src="assets/img/icons/socials/fb-black.png" class="icon-32 fmi-1"></a>
+                    <a href=""><img src="assets/img/icons/socials/itchio-textless-white.svg" class="icon-32 fmi-1"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

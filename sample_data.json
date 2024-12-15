@@ -16,5 +16,11 @@
         "desc" : "FPG Game",
         "category" : "FPG",
         "img" : "assets/img/FPS.jpg"
+    },
+    {
+        "name" : "Game 4",
+        "desc" : "Fighting Game",
+        "category" : "Fighting Game",
+        "img" : "assets/img/fighting.jpg"
     }
 ]
