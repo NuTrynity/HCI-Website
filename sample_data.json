@@ -1,26 +1,30 @@
 [
     {
-        "name" : "Game 1",
-        "desc" : "Pixel Action Game",
-        "category" : "Action",
-        "img" : "assets/img/PIXEL BG.jpg"
+        "name" : "Brotato",
+        "desc" : "Shooter Game about a Bro Potato",
+        "category" : ["Action", "Shooter"],
+        "img" : "assets/img/brotato_1.jpg",
+        "link" : ""
     },
     {
-        "name" : "Game 2",
-        "desc" : "An Action Game",
-        "category" : "Action",
-        "img" : "assets/img/action.jpg"
+        "name" : "Kinito Pet",
+        "desc" : "A video game about your friend Kinito Pet",
+        "category" : ["Horror"],
+        "img" : "assets/img/kinitopet.jpg",
+        "link" : ""
     },
     {
-        "name" : "Game 3",
-        "desc" : "FPG Game",
-        "category" : "FPG",
-        "img" : "assets/img/FPS.jpg"
+        "name" :"Buckshot Roulette",
+        "desc" :"A computer game by Mike Klubnika",
+        "category" : ["Casual", "Horror"],
+        "img" : "assets/img/buckshot-roulette.jpg",
+        "link" : ""
     },
     {
-        "name" : "Game 4",
-        "desc" : "Fighting Game",
-        "category" : "Fighting Game",
-        "img" : "assets/img/fighting.jpg"
+        "name" :"Until Then",
+        "desc" :"A game about the Coming of Age",
+        "category" : ["Casual", "Romance", "Pixel"],
+        "img" : "assets/img/bg-masthead.jpg",
+        "link" : ""
     }
 ]

@@ -254,9 +254,9 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Genre_Page.html">Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#page-top">Games</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     </ul>
                 </div>
@@ -293,8 +293,8 @@
                 </div>
                 <div class="col-4">
                     <a href="index.html" class="nav-item fmi-1">Home</a>
-                    <a href="#page-top" class="nav-item fmi-1">Resources</a>
-                    <a href="Genre_Page.html" class="nav-item fmi-1">Games</a>
+                    <a href="resources.html" class="nav-item fmi-1">Resources</a>
+                    <a href="#page-top" class="nav-item fmi-1">Games</a>
                 </div>
                 <div class="col-4">
                     <a href=""><img src="assets/img/icons/socials/ko-fi-black.png" class="icon-32 fmi-1"></a>
@@ -325,12 +325,14 @@
             .then(data => {
                 
                 let content = data.map(function(item) {
-                    return `        <div class="game-card">
+                    return `    <a style="text-decoration: none;" href="${item.link}"    
+                                    <div class="game-card">
                                         <img class="image" src="${item.img}" alt="Action">
                                         <h1 class="name">${item.name}</h1>
                                         <p class="desc">${item.desc}</p>
                                         <small class="category">${item.category}</small>
-                                    </div>`;
+                                    </div>
+                                </a>`;
                 })
 
                 content = content.join("");
@@ -338,4 +340,4 @@
             });
         </script>
     </body>
-    </html>
+</html>
