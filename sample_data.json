@@ -4,27 +4,27 @@
         "desc" : "Shooter Game about a Bro Potato",
         "category" : ["Action", "Shooter"],
         "img" : "assets/img/brotato_1.jpg",
-        "link" : ""
+        "link" : "https://store.steampowered.com/app/1942280/Brotato/"
     },
     {
         "name" : "Kinito Pet",
         "desc" : "A video game about your friend Kinito Pet",
         "category" : ["Horror"],
         "img" : "assets/img/kinitopet.jpg",
-        "link" : ""
+        "link" : "https://www.kinitopet.com/"
     },
     {
         "name" :"Buckshot Roulette",
         "desc" :"A computer game by Mike Klubnika",
-        "category" : ["Casual", "Horror"],
+        "category" : ["Gambling", "Horror"],
         "img" : "assets/img/buckshot-roulette.jpg",
-        "link" : ""
+        "link" : "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
     },
     {
         "name" :"Until Then",
         "desc" :"A game about the Coming of Age",
-        "category" : ["Casual", "Romance", "Pixel"],
+        "category" : ["Casual", "Adventure", "Pixel"],
         "img" : "assets/img/bg-masthead.jpg",
-        "link" : ""
+        "link" : "https://store.steampowered.com/app/1574820/Until_Then/"
     }
 ]
