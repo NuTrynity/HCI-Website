@@ -1,30 +1,42 @@
 [
     {
         "name" : "Brotato",
-        "desc" : "Shooter Game about a Bro Potato",
+        "desc" : "A top-down arena shooter roguelite where you play a potato wielding up to 6 weapons at a time to fight off hordes of aliens.",
         "category" : ["Action", "Shooter"],
-        "img" : "assets/img/brotato_1.jpg",
-        "link" : "https://store.steampowered.com/app/1942280/Brotato/"
+        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/header.jpg?t=1733741345",
+        "link" : "https://store.steampowered.com/app/1942280/Brotato/",
+        "price" : "P174.95"
     },
     {
         "name" : "Kinito Pet",
-        "desc" : "A video game about your friend Kinito Pet",
+        "desc" : "KinitoPET is a psychological horror experience that takes place through Kinito, an early 2000s virtual assistant.",
         "category" : ["Horror"],
-        "img" : "assets/img/kinitopet.jpg",
-        "link" : "https://www.kinitopet.com/"
+        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2075070/header.jpg?t=1726252734",
+        "link" : "https://www.kinitopet.com/",
+        "price" : "P209.95"
     },
     {
         "name" :"Buckshot Roulette",
-        "desc" :"A computer game by Mike Klubnika",
+        "desc" :"Play Russian roulette with a 12-gauge shotgun. Four enter. One leaves. Roll the dice with your life. Good luck!",
         "category" : ["Gambling", "Horror"],
-        "img" : "assets/img/buckshot-roulette.jpg",
-        "link" : "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
+        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2835570/header.jpg?t=1734125793",
+        "link" : "https://store.steampowered.com/app/2835570/Buckshot_Roulette/",
+        "price" : "P109.95"
     },
     {
         "name" :"Until Then",
-        "desc" :"A game about the Coming of Age",
+        "desc" :"Until Then is a 2024 adventure game developed by Polychroma Games and published by Maximum Entertainment.",
         "category" : ["Casual", "Adventure", "Pixel"],
-        "img" : "assets/img/bg-masthead.jpg",
-        "link" : "https://store.steampowered.com/app/1574820/Until_Then/"
+        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574820/header_alt_assets_0.jpg?t=1732656417",
+        "link" : "https://store.steampowered.com/app/1574820/Until_Then/",
+        "price" : "P615.00"
+    },
+    {
+        "name" : "PVKK",
+        "desc" : "Operate your planetary defense cannon to fend off interplanetary invasion",
+        "category" : ["Action"],
+        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2956040/header.jpg?t=1731071807",
+        "link" : "https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/",
+        "price" : "Coming Soon"
     }
 ]
