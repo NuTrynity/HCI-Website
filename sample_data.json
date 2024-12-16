@@ -38,5 +38,13 @@
         "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2956040/header.jpg?t=1731071807",
         "link" : "https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/",
         "price" : "Coming Soon"
+    },
+    {
+        "name" : "Wild Comos",
+        "desc" : "You crashed into an unknown asteroid belt. Explore this alien world, leap between asteroids and find a way to repair your spaceship.",
+        "category" : ["Casual", "Adventure"],
+        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3051070/header.jpg?t=1733490124",
+        "link" : "https://store.steampowered.com/app/3051070/Wild_Cosmos/",
+        "price" : "Coming Soon"
     }
 ]

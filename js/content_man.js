@@ -14,7 +14,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     e.preventDefault();
                     const category = e.target.dataset.cat;
 
-                    // Filter games if a category is selected, otherwise show all games
                     const filteredGames = category ?
                         gamesData.filter((game) => game.category.includes(category)) :
                         gamesData;
