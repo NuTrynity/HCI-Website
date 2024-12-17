@@ -5,6 +5,12 @@ const links = document.querySelectorAll('.fmi-1 a');
 let game_data;
 
 window.addEventListener("DOMContentLoaded", () => {
+    let images = [
+        "assets/img/until-then-2.jpg",
+        "assets/img/tail-quest.jpg",
+        "assets/img/usagi-shima-5.jpg"
+    ]
+
     fetch("sample_data.json")
         .then((response) => response.json())
         .then((data) => {
@@ -21,6 +27,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
             display_games(game_data);
         });
+
+    rand_masthead_img(images);
 });
 
 searchInput.addEventListener("input", (e) => {
@@ -31,6 +39,7 @@ searchInput.addEventListener("input", (e) => {
     display_games(filteredGames);
 });
 
+// Displays/Updates the contents of the Games
 function display_games(games) {
     let content = games.map((item) => {
         return `
@@ -46,4 +55,14 @@ function display_games(games) {
     }).join("");
 
     container.innerHTML = content;
+}
+
+// Choose a random image from the array of images
+// PLEASE PUT AN ARRAY IN THE PARAMETER PLEASE
+function rand_masthead_img(images) {
+    const masthead_bg = document.querySelector('.masthead');
+    const rand_index = Math.floor(Math.random() * images.length);
+    const newImageUrl = images[rand_index];
+
+    masthead_bg.style.backgroundImage = `linear-gradient(to bottom, rgba(84, 59, 58, 0.8) 0%, rgba(90, 90, 130, 0.8) 100%), url('${newImageUrl}')`;
 }

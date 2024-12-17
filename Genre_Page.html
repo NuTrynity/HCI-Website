@@ -34,33 +34,49 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="hero text-dark">
-            <h1>Games <br> Made in Godot!</h1>
-            <p>See all the amazing games made in the Godot Engine</p>
-            <input type="search" placeholder="Search Here" class="search-bar">
-        </section>
-    </main>
-    <div class="text-center">
-        <ul class="no-bullets hstack justify-content-center">
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" >All</a></li>
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Action">Action</a></li>
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Shooter">Shooter</a></li>
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Horror">Horror</a></li>
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Gambling">Gambling</a></li>
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Casual">Casual</a></li>
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Adventure">Adventure</a></li>
-            <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Pixel">Pixel</a></li>
-        </ul>
-    </div>
-    <div class="game-section" id="page-top">
-        <div class="game-section">
-            <h1 class="text-center">Games Made in Godot</h1>
-            <div class="game-cards">
-                <!-- Put Contents on Sample_Data.json to add a game-card-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="fw-bold text-white font-weight-bold">Games <br> Made in Godot!</h1>
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Find Games!</p>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+    <section class="page-section">
+        <h2 class="text-center">Games</h2>
+        <div class="text-center">
+            <input type="search" placeholder="Search Here" class="search-bar text-center">
+            <ul class="no-bullets hstack justify-content-center">
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="">All</a></li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Action">Action</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Shooter">Shooter</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Horror">Horror</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href=""
+                        data-cat="Gambling">Gambling</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Casual">Casual</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href=""
+                        data-cat="Adventure">Adventure</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Pixel">Pixel</a></li>
+            </ul>
+        </div>
+        <div class="game-section" id="page-top">
+            <div class="game-section">
+                <div class="game-cards">
+                    <!-- Put Contents on Sample_Data.json to add a game-card-->
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="py-5 text-white bg-primary">
         <div class="container">
             <div class="row small text-center text-muted">

@@ -1,215 +1,187 @@
-    /* General styles */
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f7f7f7;
-        color: #333;
-    }
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
 
-    ul {
-        margin-bottom: 0;
-    }
+ul {
+    margin-bottom: 0;
+}
 
-    /* Navigation bar styles */
+/* Navigation bar styles */
 
-    .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem; 
+}
 
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 1.5rem;
-    }
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 
-    .nav-links li {
-        display: inline;
-    }
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
 
-    .nav-links a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
+.nav-links li {
+    display: inline;
+}
 
-    .download-btn {
-        text-decoration: none;
-        background-color: #333;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        font-weight: bold;
-    }
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
 
-    .download-btn:hover {
-        background-color: #555;
-    }
+.download-btn {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
-    /* Hero section styles */
-    .hero {
-        text-align: center;
-        background: linear-gradient(to bottom, #f5f7fc, #ffffff);
-        padding: 5rem 2rem;
-    }
+.download-btn:hover {
+    background-color: #555;
+}
 
-    .hero h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+}
 
-    .hero p {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-    }
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
-    .search-bar {
-        width: 80%;
-        max-width: 500px;
-        padding: 0.8rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-    }
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
 
-    .buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
+.search-bar {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
 
-    .asset-btn, .template-btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+/* Button styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 
-    .asset-btn {
-        background-color: #d8d8ff;
-        color: #333;
-    }
+.asset-btn, .template-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-    .template-btn {
-        background-color: #333;
-        color: #fff;
-    }
+.asset-btn {
+    background-color: #d8d8ff;
+    color: #333;
+}
 
-    .asset-btn:hover, .template-btn:hover {
-        opacity: 0.9;
-    }
+.template-btn {
+    background-color: #333;
+    color: #fff;
+}
 
-    /* Hero section styles with background image */
-    .hero {
-        text-align: center;
-        background: url('assets/img/Action-Adventure.jpg') no-repeat center center/cover;
-        padding: 5rem 2rem;
-        color: white;
-        position: relative;
-    }
+.asset-btn:hover, .template-btn:hover {
+    opacity: 0.9;
+}
 
-    /* Adjust header logo styles */
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
+.template-btn.active {
+    background-color: #000;
+    color: #fff;
+}
 
-    .logo img {
-        width: 40px; /* Adjust size as needed */
-        height: 40px;
-        border-radius: 50%; /* Optional: make it circular */
-    }
+/* Game section styles */
+.game-section {
+    margin: 2rem auto;
+    text-align: center;
+}
 
-    /* Game section styles */
-    .game-section {
-        margin: 2rem auto;
-        text-align: center;
-    }
+.game-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
 
-    .game-cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
+.game-card {
+    flex: 1 1 calc(25% - 16px); 
+    max-width: calc(25% - 16px); 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
 
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.game-card p {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+.game-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px auto;
+    max-width: 1200px; 
+}
+
+@media (max-width: 768px) {
     .game-card {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        width: 200px;
-        padding: 1rem;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s;
+        flex: 1 1 calc(50% - 16px); 
     }
+}
 
-    .game-card:hover {
-        transform: scale(1.05);
-    }
-
-    .game-card img {
-        width: 100%;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .game-card h3 {
-        font-size: 1.1rem;
-        margin: 0.5rem 0;
-        color: #333;
-    }
-
-    .game-card p {
-        font-size: 0.9rem;
-        color: #666;
-        font-weight: bold;
-    }
-
-    /* Active button styles */
-    .template-btn.active {
-        background-color: #000;
-        color: #fff;
-    }
-
-
-    /* General container styling */
-    .game-cards-container {
-        display: flex;
-        flex-wrap: wrap; /* Allows wrapping of rows */
-        justify-content: center; /* Centers the cards horizontally */
-        gap: 16px; /* Adds spacing between cards */
-        margin: 20px auto; /* Centers the container on the page */
-        max-width: 1200px; /* Optional: Restrict width of the container */
-    }
-
-    /* Individual card styling */
+@media (max-width: 480px) {
     .game-card {
-        flex: 1 1 calc(25% - 16px); /* Ensures 4 cards per row (25% each minus gap) */
-        max-width: calc(25% - 16px); /* Restrict max width to 25% per card */
-        background-color: #f4f4f4; /* Example background color */
-        padding: 20px; /* Add space inside the card */
-        border: 1px solid #ccc; /* Optional border */
-        border-radius: 8px; /* Rounded corners */
-        text-align: center; /* Center text */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        flex: 1 1 100%; 
     }
-
-    /* Add responsiveness for smaller screens */
-    @media (max-width: 768px) {
-        .game-card {
-            flex: 1 1 calc(50% - 16px); /* 2 cards per row on smaller screens */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .game-card {
-            flex: 1 1 100%; /* 1 card per row on extra-small screens */
-        }
-    }
+}
