@@ -6,8 +6,8 @@
     margin-inline: 1em;
 }
 .thumbnail {
-    width: 426px;
-    height: 240px;
+    width: 320px;
+    height: 180px;
     object-fit: cover;
 }
 .icon-32 {
