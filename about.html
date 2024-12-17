@@ -11,11 +11,57 @@
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-    <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet">
+
+    <style>
+        /* Team Card Styles */
+        .team-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .team-card .social-icons a {
+            color: #555;
+            margin: 0 5px;
+            transition: color 0.3s;
+        }
+
+        .team-card .social-icons a:hover {
+            color: #0d6efd;
+        }
+
+        .team-card h5 {
+            font-weight: bold;
+            margin: 15px 0 5px;
+        }
+
+        .team-card p {
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        .bg-primary {
+            background-color: #0d6efd !important;
+        }
+    </style>
 </head>
 <body id="top-page">
     <!-- Navigation-->
@@ -37,12 +83,104 @@
         </div>
     </nav>
 
+    <!-- Header -->
     <header style="padding: 10rem;" class="bg-primary text-white">
         <div class="container">
-            <div class="align-items-center">
+            <div class="align-items-center text-center">
                 <h1>Meet the Team</h1>
+                <p class="lead">Get to know the talented individuals behind Whydot.</p>
             </div>
         </div>
     </header>
+
+    <!-- Meet the Team Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <!-- Team Member 1 -->
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="assets/img/team/member1.jpg" alt="Team Member 1">
+                        <div class="card-body text-center">
+                            <h5>John Doe</h5>
+                            <p>Project Lead</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="assets/img/team/member2.jpg" alt="Team Member 2">
+                        <div class="card-body text-center">
+                            <h5>Jane Smith</h5>
+                            <p>UI/UX Designer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-behance"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="assets/img/team/member3.jpg" alt="Team Member 3">
+                        <div class="card-body text-center">
+                            <h5>Alex Johnson</h5>
+                            <p>Developer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-stack-overflow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="assets/img/team/member3.jpg" alt="Team Member 3">
+                        <div class="card-body text-center">
+                            <h5>Alex Johnson</h5>
+                            <p>Developer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-stack-overflow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="col-md-4">
+                    <div class="card team-card">
+                        <img src="assets/img/team/member3.jpg" alt="Team Member 3">
+                        <div class="card-body text-center">
+                            <h5>Alex Johnson</h5>
+                            <p>Developer</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi bi-github"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="bi bi-stack-overflow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
