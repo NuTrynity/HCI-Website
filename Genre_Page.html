@@ -1,257 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Templates - Whydot</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/games.css">
     <link rel="icon" type="image/x-icon" href="assets/img/icons/Whydot.png" />
 </head>
-<style>
-    /* General styles */
 
-    /* Navigation bar styles */
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 1.5rem;
-    }
-
-    .nav-links li {
-        display: inline;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-    }
-
-    .download-btn {
-        text-decoration: none;
-        background-color: #333;
-        color: #fff;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-
-    .download-btn:hover {
-        background-color: #555;
-    }
-
-    /* Hero section styles with background image */
-    .hero {
-        text-align: center;
-        background: url("assets/img/buckshot-roulette.jpg") no-repeat center center/cover;
-        padding: 5rem 2rem;
-        color: white;
-        position: relative;
-    }
-
-    /* Adjust header logo styles */
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .logo img {
-        width: 40px; /* Adjust size as needed */
-        height: 40px;
-        border-radius: 50%; /* Optional: make it circular */
-    }
-
-    /* Overlay to darken background (optional) */
-    .hero::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5); /* Darken background */
-        z-index: 1;
-    }
-
-    .hero h1,
-    .hero p {
-        position: relative;
-        z-index: 2;
-    }
-
-    /* Hero section styles */
-    .hero {
-        text-align: center;
-        background: linear-gradient(to bottom, #f5f7fc, #ffffff);
-        padding: 5rem 2rem;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        margin-bottom: 2rem;
-        color: #666;
-    }
-
-    .search-bar {
-        width: 80%;
-        max-width: 500px;
-        padding: 0.8rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        margin-bottom: 1rem;
-    }
-
-    .buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .asset-btn, .template-btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .asset-btn {
-        background-color: #d8d8ff;
-        color: #333;
-    }
-
-    .template-btn {
-        background-color: #333;
-        color: #fff;
-    }
-
-    .asset-btn:hover, .template-btn:hover {
-        opacity: 0.9;
-    }
-
-    /* Game section styles */
-    .game-section {
-        margin: 2rem auto;
-        text-align: center;
-    }
-
-    .game-cards {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
-
-    .game-card {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        width: 200px;
-        padding: 1rem;
-        text-align: center;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        transition: transform 0.2s;
-    }
-
-    .game-card:hover {
-        transform: scale(1.05);
-    }
-
-    .game-card img {
-        width: 100%;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .game-card h3 {
-        font-size: 1.1rem;
-        margin: 0.5rem 0;
-        color: #333;
-    }
-
-    .game-card p {
-        font-size: 0.9rem;
-        color: #666;
-        font-weight: bold;
-    }
-
-    /* Active button styles */
-    .template-btn.active {
-        background-color: #000;
-        color: #fff;
-    }
-
-
-    /* General container styling */
-    .game-cards-container {
-        display: flex;
-        flex-wrap: wrap; 
-        justify-content: center; 
-        gap: 16px; 
-        margin: 20px auto; 
-        max-width: 1200px; 
-    }
-
-    /* Individual card styling */
-    .game-card {
-        flex: 1 1 calc(25% - 16px); 
-        max-width: calc(25% - 16px); 
-        background-color: #f4f4f4; 
-        padding: 20px; 
-        border: 1px solid #ccc; 
-        border-radius: 8px;
-        text-align: center; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Add responsiveness for smaller screens */
-    @media (max-width: 768px) {
-        .game-card {
-            flex: 1 1 calc(50% - 16px); /* 2 cards per row on smaller screens */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .game-card {
-            flex: 1 1 100%; /* 1 card per row on extra-small screens */
-        }
-    }
-
-</style>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">
-                    <img src="assets/img/icons/Whydot.png" class="icon-64" style="margin-inline: 4px; border-radius: 1em;">
+                    <img src="assets/img/icons/Whydot.png" class="icon-64"
+                        style="margin-inline: 4px; border-radius: 1em;">
                     Whydot
                 </a>
-                <!-- TODO PUT LOGO HERE -->
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -263,29 +34,49 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <h1>Game Genres and <br> Example Games</h1>
-            <p>Pick genres of games with Whydot.</p>
-            <input type="text" placeholder="Search for a game example" class="search-bar">
-            <div class="buttons">
-                <button class="asset-btn">Asset Packs</button>
-                <button class="template-btn">Game Templates</button>
-            </div>
-        </section>
-    </main>
-    <div class="game-section" id="page-top">
-        <div class="game-section">
-            <h1 class="text-center">Games, Made in Godot</h1>
-            <div class="game-cards">
-                <!-- Put Contents on Sample_Data.json to add a game-card-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="fw-bold text-white font-weight-bold">Games <br> Made in Godot!</h1>
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5">Find Games!</p>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- Footer-->
+    </header>
+    <section class="page-section">
+        <h2 class="text-center">Games</h2>
+        <div class="text-center">
+            <input type="search" placeholder="Search Here" class="search-bar text-center">
+            <ul class="no-bullets hstack justify-content-center">
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="">All</a></li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Action">Action</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Shooter">Shooter</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Horror">Horror</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href=""
+                        data-cat="Gambling">Gambling</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Casual">Casual</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href=""
+                        data-cat="Adventure">Adventure</a>
+                </li>
+                <li class="fmi-1"><a class="text-decoration-none link-secondary" href="" data-cat="Pixel">Pixel</a></li>
+            </ul>
+        </div>
+        <div class="game-section" id="page-top">
+            <div class="game-section">
+                <div class="game-cards">
+                    <!-- Put Contents on Sample_Data.json to add a game-card-->
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="py-5 text-white bg-primary">
         <div class="container">
             <div class="row small text-center text-muted">
@@ -295,7 +86,8 @@
                 <div class="col-4">
                     <a href="index.html" class="nav-item fmi-1">Home</a>
                     <a href="resources.html" class="nav-item fmi-1">Resources</a>
-                    <a href="#page-top" class="nav-item fmi-1">Games</a>
+                    <a href="Genre_Page.html" class="nav-item fmi-1">Games</a>
+                    <a href="about.html" class="nav-item fmi-1">About</a>
                 </div>
                 <div class="col-4">
                     <a href=""><img src="assets/img/icons/socials/ko-fi-black.png" class="icon-32 fmi-1"></a>
@@ -306,39 +98,10 @@
             </div>
         </div>
     </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- SimpleLightbox plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js">
+    </script>
+    <script src="js/content_man.js"></script>
+</body>
 
-        <script>
-            // For Genre Page Only
-            const container = document.querySelector(".game-cards");
-            fetch("sample_data.json")
-            .then((Response) => Response.json())
-            .then(data => {
-                
-                let content = data.map(function(item) {
-                    return `    <a style="text-decoration: none;" href="${item.link}"    
-                                    <div class="game-card">
-                                        <img class="image" src="${item.img}" alt="Action">
-                                        <h1 class="name">${item.name}</h1>
-                                        <p class="desc">${item.desc}</p>
-                                        <small class="category">${item.category}</small>
-                                    </div>
-                                </a>`;
-                })
-
-                content = content.join("");
-                container.innerHTML = content
-            });
-        </script>
-    </body>
 </html>

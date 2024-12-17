@@ -1,0 +1,187 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+/* Navigation bar styles */
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.download-btn {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    width: 80%;
+    max-width: 500px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+/* Button styles */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.asset-btn, .template-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.asset-btn {
+    background-color: #d8d8ff;
+    color: #333;
+}
+
+.template-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.asset-btn:hover, .template-btn:hover {
+    opacity: 0.9;
+}
+
+.template-btn.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Game section styles */
+.game-section {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.game-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.game-card {
+    flex: 1 1 calc(25% - 16px); 
+    max-width: calc(25% - 16px); 
+    background-color: #f4f4f4; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    text-align: center; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.game-card h3 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.game-card p {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+.game-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 20px auto;
+    max-width: 1200px; 
+}
+
+@media (max-width: 768px) {
+    .game-card {
+        flex: 1 1 calc(50% - 16px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .game-card {
+        flex: 1 1 100%; 
+    }
+}
