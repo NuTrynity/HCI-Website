@@ -10,6 +10,11 @@
     height: 180px;
     object-fit: cover;
 }
+.thumbnail-1 {
+    width: 640px;
+    height: 320px;
+    object-fit: cover;
+}
 .icon-32 {
     height: 32px;
 }
