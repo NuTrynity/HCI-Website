@@ -306,15 +306,16 @@
             //Please put all pictures that can be good on the hero section here
             const images = [
                 "assets/img/bg-masthead.jpg",
-                "assets/img/kinitopet.jpg",
+                "assets/img/blastronaut-1.jpg",
                 "assets/img/buckshot-roulette.jpg",
+                "assets/img/kinitopet.jpg",
+                "assets/img/pvkk-1.jpg",
+                "assets/img/until-then-2.jpg",
+                "assets/img/usagi-shima-5.jpg"
             ];
-
-            // Choose a random image from the array
             const rand_index = Math.floor(Math.random() * images.length);
             const newImageUrl = images[rand_index];
 
-            // Replace the URL in the CSS variable
             root.style.setProperty('--bg-image', `url('${newImageUrl}')`); 
             });
         </script>
