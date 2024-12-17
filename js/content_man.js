@@ -1,33 +1,34 @@
-//Only used for Genre_Page.html for now
-
+const searchInput = document.querySelector(".search-bar");
 const container = document.querySelector(".game-cards");
 const links = document.querySelectorAll('.fmi-1 a');
-const search_btn = document.querySelector('.search-bar')
 
-let gamesData;
+let game_data;
 
 window.addEventListener("DOMContentLoaded", () => {
     fetch("sample_data.json")
         .then((response) => response.json())
         .then((data) => {
-            gamesData = data;
+            game_data = data;
 
             links.forEach((link) => {
                 link.addEventListener("click", (e) => {
                     e.preventDefault();
                     const category = e.target.dataset.cat;
-
-                    const filteredGames = category ?
-                        gamesData.filter((game) => game.category.includes(category)) :
-                        gamesData;
-
+                    const filteredGames = game_data.filter((game) => game.category.includes(category));
                     display_games(filteredGames);
                 });
             });
 
-            // Initial display of all games
-            display_games(gamesData);
+            display_games(game_data);
         });
+});
+
+searchInput.addEventListener("input", (e) => {
+    const searchValue = searchInput.value.toLowerCase();
+    const filteredGames = game_data.filter((game) =>
+        game.name.toLowerCase().includes(searchValue)
+    );
+    display_games(filteredGames);
 });
 
 function display_games(games) {
@@ -45,8 +46,4 @@ function display_games(games) {
     }).join("");
 
     container.innerHTML = content;
-}
-
-search_btn.onsearch = function() {
-    console.log(search_btn.value);
 }
