@@ -1,5 +1,8 @@
+//Only used for Genre_Page.html for now
+
 const container = document.querySelector(".game-cards");
 const links = document.querySelectorAll('.fmi-1 a');
+const search_btn = document.querySelector('.search-bar')
 
 let gamesData;
 
@@ -42,4 +45,8 @@ function display_games(games) {
     }).join("");
 
     container.innerHTML = content;
+}
+
+search_btn.onsearch = function() {
+    console.log(search_btn.value);
 }
