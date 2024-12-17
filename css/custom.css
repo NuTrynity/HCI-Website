@@ -37,6 +37,9 @@ hr.m-white-space {
 .b-radius-1 {
     border-radius: 1em;
 }
+.no-bullets {
+    list-style-type: none;
+}
 .c-container {
     display: flex;
     width: 100%;
