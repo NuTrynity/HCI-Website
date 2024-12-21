@@ -1,4 +1,10 @@
 /* General styles */
+:root {
+    --bs-primary: #1c191a;
+    --bs-secondary: #2B2B2B;
+    --bs-white: #fff;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -133,7 +139,7 @@ ul {
 .game-card {
     flex: 1 1 calc(25% - 16px); 
     max-width: calc(25% - 16px); 
-    background-color: #f4f4f4; 
+    background-color: rgba(0, 0, 0, 0.33); 
     padding: 20px; 
     border: 1px solid #ccc; 
     border-radius: 8px; 
@@ -162,7 +168,7 @@ ul {
 
 .game-card p {
     font-size: 0.9rem;
-    color: #666;
+    color: var(--bs-white);
     font-weight: bold;
 }
 

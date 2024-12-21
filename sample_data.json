@@ -1,58 +1,50 @@
 [
     {
-        "name" : "Brotato",
-        "desc" : "A top-down arena shooter roguelite where you play a potato wielding up to 6 weapons at a time to fight off hordes of aliens.",
-        "category" : ["Action", "Shooter", "All"],
-        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1942280/header.jpg?t=1733741345",
-        "link" : "https://store.steampowered.com/app/1942280/Brotato/",
-        "price" : "P174.95"
+        "name" : "AirHead",
+        "desc" : "A Short puzzle platformer by NuTrynity",
+        "category" : ["Puzzle", "Casual"],
+        "img" : "https://img.itch.zone/aW1nLzE2NDc2NzQyLnBuZw==/315x250%23c/v%2B4aw7.png",
+        "link" : "https://nutrynity.itch.io/airhead",
+        "price" : "Free"
     },
     {
-        "name" : "Kinito Pet",
-        "desc" : "KinitoPET is a psychological horror experience that takes place through Kinito, an early 2000s virtual assistant.",
-        "category" : ["Horror", "All"],
-        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2075070/header.jpg?t=1726252734",
-        "link" : "https://www.kinitopet.com/",
-        "price" : "P209.95"
-    },
-    {
-        "name" :"Buckshot Roulette",
-        "desc" :"Play Russian roulette with a 12-gauge shotgun. Four enter. One leaves. Roll the dice with your life. Good luck!",
-        "category" : ["Gambling", "Horror", "All"],
-        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2835570/header.jpg?t=1734125793",
-        "link" : "https://store.steampowered.com/app/2835570/Buckshot_Roulette/",
-        "price" : "P109.95"
-    },
-    {
-        "name" :"Until Then",
-        "desc" :"Until Then is a 2024 adventure game developed by Polychroma Games and published by Maximum Entertainment.",
-        "category" : ["Casual", "Adventure", "Pixel", "All"],
-        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1574820/header_alt_assets_0.jpg?t=1732656417",
-        "link" : "https://store.steampowered.com/app/1574820/Until_Then/",
-        "price" : "P615.00"
-    },
-    {
-        "name" : "PVKK",
-        "desc" : "Operate your planetary defense cannon to fend off interplanetary invasion",
-        "category" : ["Action", "All"],
-        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2956040/header.jpg?t=1731071807",
-        "link" : "https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/",
-        "price" : "Coming Soon"
-    },
-    {
-        "name" : "Wild Comos",
-        "desc" : "You crashed into an unknown asteroid belt. Explore this alien world, leap between asteroids and find a way to repair your spaceship.",
-        "category" : ["Casual", "Adventure", "All"],
-        "img" : "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3051070/header.jpg?t=1733490124",
-        "link" : "https://store.steampowered.com/app/3051070/Wild_Cosmos/",
-        "price" : "Coming Soon"
-    },
-    {
-        "name" : "Usagi Shima",
-        "desc" : "Usagi Shima is a relaxing, bunny-collecting idle game. Decorate your island to your liking and attract adorable new bunnies with your enchanting items and buildings.",
+        "name" : "Balloon 'o Mania",
+        "desc" : "Dont let the Balloons touch the Ground!",
         "category" : ["Casual"],
-        "img" : "https://usagishima.net/wp-content/uploads/2024/11/Autumn_Harvest_KV_Landscape.png",
-        "link" : "https://usagishima.net/",
+        "img" : "https://img.itch.zone/aW1nLzE1NTkwNTc3LnBuZw==/315x250%23c/Emb87P.png",
+        "link" : "https://nutrynity.itch.io/balloon-mania",
+        "price" : "Free"
+    },
+    {
+        "name" : "Balloon 'o Mania",
+        "desc" : "You run a cat cafe :3",
+        "category" : ["Casual"],
+        "img" : "https://img.itch.zone/aW1nLzE0MDc3OTA0LnBuZw==/315x250%23c/K3EpaZ.png",
+        "link" : "https://nutrynity.itch.io/the-cat-cafe",
+        "price" : "Free"
+    },
+    {
+        "name" : "Debt Repayment Hell",
+        "desc" : "A cycle of paying debt, that is also hell",
+        "category" : ["Casual"],
+        "img" : "https://img.itch.zone/aW1nLzEzMDEzODEyLnBuZw==/315x250%23c/mL0kMf.png",
+        "link" : "https://nutrynity.itch.io/debt-repayment-hell",
+        "price" : "Free"
+    },
+    {
+        "name" : "Remember It!",
+        "desc" : "A Memory Game School Project made in the Godot-Engine",
+        "category" : ["Casual", "Adventure", "Pixel"],
+        "img" : "https://img.itch.zone/aW1nLzExODE0NjY3LnBuZw==/315x250%23c/jPAgW1.png",
+        "link" : "https://nutrynity.itch.io/remember-it",
+        "price" : "Free"
+    },
+    {
+        "name" : "Surrounded",
+        "desc" : "A Simple Shooter Game by NuTrynity",
+        "category" : ["Casual", "Shooter", "Pixel"],
+        "img" : "https://img.itch.zone/aW1nLzEwODE4ODAwLnBuZw==/315x250%23c/rhSbeG.png",
+        "link" : "https://nutrynity.itch.io/surrounded",
         "price" : "Free"
     }
 ]
